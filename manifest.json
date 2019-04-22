@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Turdium",
+  "description": "The opposite of the applause on Medium",
+  "version": "1",
+  "author": "Ognjen Regoje",
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  },
+  "browser_action": {
+    "name": "Turdium this",
+    "default_title": "Mark this page as a turd",
+    "default_icon": "icon-inactive.svg"
+  },
+  "background": {
+    "scripts": ["axios.min.js", "background.js"]
+  },
+  "permissions": ["activeTab", "storage", "tabs"]
+}
